@@ -1,10 +1,20 @@
-var n1 = 8;
+var n1 = 10;
 var n2 = 4;
-var n3 = 9;
-//---------- MODO FUNCTION SIMPLES ------------
-var fmedia = function (n1, n2, n3) { return (n1 + n2 + n3) / 3; };
-console.log("Sua media e : " + fmedia(n1, n2, n3));
+//let n3: number  = 9
+//---------- MODO FUNCTION SIMPLES SEM UM PARAMETRO ------------
+var fmedia = function (n1, n2, n3) {
+    if (n3 === void 0) { n3 = 7; }
+    return (n1 + n2 + n3) / 3;
+};
+console.log("Sua media e : " + fmedia(n1, n2));
 /*
+
+/*---------- MODO FUNCTION SIMPLES ------------
+let fmedia = (n1:number,n2:number, n3:number) => (n1+n2+n3)/3
+
+console.log(`Sua media e : ${fmedia (n1,n2,n3)}`)
+
+
 ---------- MODO SEM FUNCTION SIMPLES ---------------
 let media = (n1+n2+n3)/3
 
